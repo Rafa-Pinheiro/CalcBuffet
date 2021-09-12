@@ -13,8 +13,26 @@ window.onload = function()
 
   Calc.addEventListener("click", function()
   {
-    var resrefri = parseFloat(qnt.value)*200/1000;
+    //atribuindo o resultado:
+
+    //Refri
+    var resrefri = parseFloat(qnt.value)*refripp/1000;
     document.querySelector("#refri").innerHTML = String(resrefri);
     document.querySelector("#lt").innerHTML = 'litros';
+
+    //Bolo
+    var resbolo = parseFloat(qnt.value)*bolopp/1000;
+    document.querySelector("#bolo").innerHTML = String(resbolo);
+    document.querySelector("#kg").innerHTML = 'kg';
+
+    //Doces
+    var resdoce = parseFloat(qnt.value)*docepp;
+    document.querySelector('#doce').innerHTML = String(resdoce);
+    document.querySelector('#und').innerHTML = 'unidades';
+
+  //Salgadinhos
+    var ressalg = parseFloat(qnt.value)*salgpp;
+    document.querySelector("#salgados").innerHTML = String(ressalg);
+    document.querySelector("#uns").innerHTML = 'unidades';
   })
 };
