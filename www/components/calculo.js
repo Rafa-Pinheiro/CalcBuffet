@@ -3,6 +3,7 @@ window.onload = function()
 {
   const qnt = document.querySelector('#pessoas');
   const Calc = document.querySelector("#calc");
+  const Limpar = document.querySelector("#limpar");
   const refripp= 200;
   const bolopp = 100;
   const docepp = 3;
@@ -34,5 +35,17 @@ window.onload = function()
     var ressalg = parseFloat(qnt.value)*salgpp;
     document.querySelector("#salgados").innerHTML = String(ressalg);
     document.querySelector("#uns").innerHTML = 'unidades';
+  })
+
+  Limpar.addEventListener('click', function(){
+    qnt.value = "";
+    document.querySelector("#refri").innerHTML = '';
+    document.querySelector("#lt").innerHTML = '';
+    document.querySelector("#bolo").innerHTML = '';
+    document.querySelector("#kg").innerHTML = '';
+    document.querySelector('#doce').innerHTML = '';
+    document.querySelector('#und').innerHTML = '';
+    document.querySelector("#salgados").innerHTML = '';
+    document.querySelector("#uns").innerHTML = '';
   })
 };
