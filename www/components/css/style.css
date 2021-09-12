@@ -1,4 +1,20 @@
 /* This is a CSS file */
 .etiqueta {
-  font-size: 20px;
+  font-size: 2.5vh;
+  font-weight: bolder;
+  margin: 1vh;
+}
+.etiqueta1 {
+  font-size: 3vh;
+  color: darkcyan;
+  text-decoration: underline;
+}
+.etiqueta3{
+  font-size: 2.5vh;
+  font-weight: bolder;
+  margin: 1vh;
+  text-align: center;
+}
+#pessoas {
+  font-size: 3vh; 
 }
