@@ -13,9 +13,8 @@ window.onload = function()
 
   Calc.addEventListener("click", function()
   {
-    var resrefri = parseFloat(qnt);
-    alert(resrefri);
-    document.querySelector("#refri").innerHTML= parseString(resrefri);
-    document.querySelector("#lt").value = 'litros';
+    var resrefri = parseFloat(qnt.value)*200/1000;
+    document.querySelector("#refri").innerHTML = String(resrefri);
+    document.querySelector("#lt").innerHTML = 'litros';
   })
 };
